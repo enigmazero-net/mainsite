@@ -1,0 +1,32 @@
+.ani {
+  animation: 12s linear 0s infinite normal none running rotate;
+  width: 200%;
+  overflow: hidden;
+}.ani-r {
+   animation: 12s linear 0s infinite reverse none running rotate-r;
+   width: 200%;
+   overflow: hidden;
+ }
+
+.ani-content {
+  display: inline-block;
+  width: 50%;
+}
+
+@keyframes rotate {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes rotate-r {
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.icon-box{
+  @apply flex;
+  div{
+    @apply  rotate-90  whitespace-nowrap ;
+  }
+}

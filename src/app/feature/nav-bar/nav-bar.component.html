@@ -1,0 +1,29 @@
+<div class="flex flex-col justify-center sm:flex-row sm:justify-between items-center px-24 py-4 z-30 relative"
+     [ngClass]="{'bg-[#0F172A]': isBG }">
+  <img routerLink="/home" class="h-12 cursor-pointer mb-6 sm:mb-0" src="assets/image/enigma-zero-logo.png" alt="">
+  <nav class="flex gap-6 flex-col justify-center sm:flex-row items-center font-light text-sm text-slate-300">
+    <a routerLink="/home" routerLinkActive="text-amber-500 text-medium"
+       class="hover:text-white cursor-pointer">Home</a>
+    <button [cdkMenuTriggerFor]="menu" class="cdk-standalone-trigger !p-0"><span class="pr-2">Services</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.06232 8.04169C7.8748 8.22916 7.62049 8.33448 7.35532 8.33448C7.09016 8.33448 6.83585 8.22916 6.64832 8.04169L0.991324 2.38469C0.895813 2.29245 0.819631 2.1821 0.767222 2.0601C0.714813 1.93809 0.687227 1.80687 0.686073 1.67409C0.684919 1.54132 0.710221 1.40964 0.760502 1.28674C0.810783 1.16384 0.885036 1.05219 0.978929 0.958298C1.07282 0.864406 1.18447 0.790152 1.30737 0.739872C1.43027 0.689591 1.56195 0.664289 1.69472 0.665443C1.8275 0.666597 1.95872 0.694183 2.08073 0.746592C2.20273 0.799001 2.31308 0.875183 2.40532 0.970693L7.35532 5.92069L12.3053 0.970693C12.4939 0.788535 12.7465 0.687741 13.0087 0.690019C13.2709 0.692298 13.5217 0.797466 13.7071 0.982874C13.8925 1.16828 13.9977 1.4191 14 1.68129C14.0023 1.94349 13.9015 2.19609 13.7193 2.38469L8.06232 8.04169Z"
+              fill="#BBC5D2"/>
+      </svg>
+    </button>
+    <ng-template #menu>
+      <div class="cdk-menu " cdkMenu>
+        <button routerLink="/arch-viz" class="cdk-menu-item text-slate-300 text-sm" cdkMenuItem>Arch-viz</button>
+        <button routerLink="/web-design" class="cdk-menu-item text-slate-300 text-sm" cdkMenuItem>Web design</button>
+        <button routerLink="/marketing" class="cdk-menu-item text-slate-300 text-sm" cdkMenuItem>Marketing</button>
+      </div>
+    </ng-template>
+    <a routerLink="/arch-viz-pricing" routerLinkActive="text-amber-500 text-medium"
+       class="hover:text-white cursor-pointer">Pricing</a>
+    <a routerLink="/about-us" routerLinkActive="text-amber-500 text-medium"
+       class="hover:text-white cursor-pointer">About Us</a>
+
+    <a routerLink="/contact-us"
+       class="h-10 px-5 py-2.5 sm:ml-12 bg-amber-500 rounded-3xl text-sm text-white font-medium">CONTACT US</a>
+  </nav>
+</div>

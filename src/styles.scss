@@ -1,1 +1,70 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "scss/mat-accordion";
+@import "scss/input";
+@import "scss/cdk-menu";
+@import '@angular/cdk/overlay-prebuilt.css';
+*{
+  //background-color: rgba(0, 100, 0, 0.36);
+  //border: solid rgba(255, 0, 0, 0.71) 1px;
+}
+html {
+  @apply scroll-smooth;
+}
+
+body{
+  background: #F7F9FC;
+}
+.btn-primary{
+  @apply px-12 py-4 bg-amber-500 rounded-full font-medium;
+}
+
+
+
+.cdk-menu {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 180px;
+  max-width: 280px;
+  background-color: #0F172A;
+  padding: 6px 0;
+  color: white;
+}
+
+.cdk-menu-item,
+.cdk-standalone-trigger {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  user-select: none;
+  min-width: 64px;
+  line-height: 36px;
+  padding: 0 16px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+}
+
+.cdk-menu-item:hover {
+  background-color: #232e49;
+}
+
+.cdk-menu-item:active {
+  background-color: rgb(170, 170, 170);
+}
+
+.cdk-standalone-item {
+  background-color: rgb(239, 239, 239);
+}
+.cdk-standalone-item:hover {
+  background-color: rgb(208, 208, 208);
+}
+.cdk-standalone-item[aria-expanded='true'] {
+  background-color: rgb(208, 208, 208);
+}

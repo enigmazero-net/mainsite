@@ -1,0 +1,12 @@
+.app-input {
+  //@apply w-full;
+  label {
+    @apply text-slate-900 text-sm font-medium leading-tight pb-2 block;
+  }
+  input {
+    @apply px-3.5 py-2.5 bg-white rounded-lg shadow border border-slate-100 justify-start items-center w-full;
+  }
+  textarea {
+    @apply px-3.5 py-2.5 bg-white rounded-lg shadow border border-slate-100 justify-start items-center w-full;
+  }
+}
