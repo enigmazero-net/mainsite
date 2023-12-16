@@ -1,0 +1,40 @@
+[debug] [2023-12-13T14:11:02.916Z] ----------------------------------------------------------------------
+[debug] [2023-12-13T14:11:02.916Z] Command:       /Users/lahirupg/.nvm/versions/node/v18.18.0/bin/node /Users/lahirupg/.nvm/versions/node/v18.18.0/bin/firebase deploy
+[debug] [2023-12-13T14:11:02.917Z] CLI Version:   12.7.0
+[debug] [2023-12-13T14:11:02.917Z] Platform:      darwin
+[debug] [2023-12-13T14:11:02.917Z] Node Version:  v18.18.0
+[debug] [2023-12-13T14:11:02.918Z] Time:          Wed Dec 13 2023 19:41:02 GMT+0530 (India Standard Time)
+[debug] [2023-12-13T14:11:02.918Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-13T14:11:02.919Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-12-13T14:11:02.971Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-13T14:11:02.971Z] > authorizing via signed-in user (lahiru.godakanda@enigmazero.net)
+[debug] [2023-12-13T14:11:02.972Z] [iam] checking project enigma-zero for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-13T14:11:02.972Z] > refreshing access token with scopes: []
+[debug] [2023-12-13T14:11:02.972Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-13T14:11:02.972Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-13T14:11:04.134Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-12-13T14:11:04.134Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-12-13T14:11:04.163Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-12-13T14:11:04.163Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-13T14:11:04.164Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/enigma-zero:testIamPermissions [none]
+[debug] [2023-12-13T14:11:04.164Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/enigma-zero:testIamPermissions x-goog-quota-user=projects/enigma-zero
+[debug] [2023-12-13T14:11:04.164Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/enigma-zero:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-13T14:11:04.771Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/enigma-zero:testIamPermissions 401
+[debug] [2023-12-13T14:11:04.771Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/enigma-zero:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2023-12-13T14:11:04.773Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-12-13T14:11:04.774Z] > refreshing access token with scopes: []
+[debug] [2023-12-13T14:11:04.774Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-13T14:11:04.775Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-13T14:11:05.639Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2023-12-13T14:11:05.639Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-13T14:11:05.640Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/enigma-zero [none]
+[debug] [2023-12-13T14:11:06.115Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/enigma-zero 401
+[debug] [2023-12-13T14:11:06.116Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/enigma-zero {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2023-12-13T14:11:06.116Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2023-12-13T14:11:06.552Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/Users/lahirupg/.nvm/versions/node/v18.18.0/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/lahirupg/.nvm/versions/node/v18.18.0/lib/node_modules/firebase-tools/lib/apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project enigma-zero. Please make sure the project exists and your account has permission to access it.
