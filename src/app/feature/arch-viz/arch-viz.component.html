@@ -1,5 +1,5 @@
 <header>
-  <div class="w-full bg-[#0F172A] h-[732px] relative" style="background-image: url('assets/image/web-design-bg.png')">
+  <div class="w-full bg-[#0F172A]  relative" style="background-image: url('assets/image/web-design-bg.png')">
     <app-nav-bar [isBG]="true"></app-nav-bar>
 
     <svg class="absolute left-0 top-0" style="height:inherit" viewBox="0 0 812 732" fill="none"
@@ -15,12 +15,12 @@
         </radialGradient>
       </defs>
     </svg>
-    <section class="text-center mt-36 relative">
+    <section class="text-center py-36 relative">
       <button
         class="h-10 px-5 py-2.5 mb-6 rounded-3xl border border-amber-500 text-white text-sm font-semibold uppercase leading-tight">
         Architectural visualization
       </button>
-      <h1 class=" text-center text-white text-7xl font-medium leading-[140%]">We pride ourselves on our <br> unique
+      <h1 class=" text-center text-white text-3xl md:text-7xl font-medium leading-[140%]">We pride ourselves on our <br> unique
         designs
         and attention to <br>detail</h1>
     </section>
@@ -28,8 +28,8 @@
 </header>
 
 <section class="pt-16">
-  <div class="text-center text-slate-900 text-4xl font-semibold ">Here are some of our work!</div>
-  <div class="flex justify-center w-full py-16 px-32 ">
+  <div class="text-center text-slate-900 text-3xl md:text-4xl font-semibold ">Here are some of our work!</div>
+  <div class="flex justify-center w-full py-16 px-4 md:px-32 ">
     <video class="rounded-2xl w-full" playsinline loop muted autoplay oncanplay="this.play()"
            onloadedmetadata="this.muted = true">
       <source src="../../../assets/video/archviz.mp4" type="video/mp4">
@@ -37,7 +37,7 @@
     </video>
   </div>
 
-  <h2 class="text-center text-slate-900 text-6xl font-semibold">Our Services</h2>
+  <h2 class="text-center text-slate-900 text-3xl md:text-6xl font-semibold">Our Services</h2>
   <p class="text-center text-slate-900 text-2xl font-normal leading-10 pt-8">Planning a simple room? Or perhaps
     designing an entire house? We got
     <br> you covered! Take a look at all our services.</p>
@@ -229,12 +229,12 @@
 </section>
 
 
-<section class="relative">
+<section class="relative bg-slate-900 px-4">
 
 
-  <div class="py-40 w-full bg-slate-900 flex-col justify-center items-center gap-9 inline-flex">
-    <h2 class="text-center text-white text-6xl font-semibold leading-10">Construction inquiries</h2>
-    <p class="text-center text-white text-2xl font-normal leading-10">Ready to make your dream project a reality?
+  <div class="relative z-10 py-40 w-full flex-col justify-center items-center gap-9 inline-flex">
+    <h2 class="text-center text-white text-3xl md:text-6xl font-semibold leading-10">Construction inquiries</h2>
+    <p class="text-center text-white text-xl md:text-2xl font-normal leading-10">Ready to make your dream project a reality?
       Contact us now to book a free <br>consultation. (services only available within Sri-Lanka)</p>
     <button routerLink="/arch-viz-pricing" class="btn-primary">View Pricing Details</button>
   </div>

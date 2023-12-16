@@ -62,7 +62,7 @@
       </video>
     </div>
     <div class="flex flex-col gap-9 items-center text-center sm:text-left sm:items-start">
-      <h2 class="font-semibold text-5xl">Architectural visualization</h2>
+      <h2 class="font-semibold text-3xl md:text-5xl">Architectural visualization</h2>
       <p>Turning Concepts into 3D Reality
         At Enigma Zero, we excel in creating lifelike 3D renderings that truly bring your vision to life.</p>
       <div>
@@ -73,14 +73,14 @@
 
   <section class="grid sm:grid-cols-2 gap-20 py-28 px-6 sm:px-20 bg-slate-100">
     <div class="sm:hidden">
-      <video playsinline loop muted autoplay oncanplay="this.play()"
+      <video class="object-cover" playsinline loop muted autoplay oncanplay="this.play()"
              onloadedmetadata="this.muted = true">
         <source src="../../../assets/video/website.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
     <div class="flex flex-col gap-9 items-center text-center sm:text-left sm:items-start">
-      <h2 class="font-semibold text-5xl">Web design and Software Engineering</h2>
+      <h2 class="font-semibold text-3xl md:text-5xl">Web design and Software Engineering</h2>
       <p>Leave an everlasting impression
         Whether starting from scratch or revamping your website, our experienced designers will create a well-crafted
         web design that captivates visitors, conveys your brand identity, and drives user engagement.</p>
@@ -106,7 +106,7 @@
       </video>
     </div>
     <div class="flex flex-col gap-9 items-center text-center sm:text-left sm:items-start">
-      <h2 class="font-semibold text-5xl">Marketing</h2>
+      <h2 class="font-semibold text-3xl md:text-5xl">Marketing</h2>
       <p>Elevate your brand presence to an even bigger audience while creating an emotional connection and building a
         loyal audience base.</p>
       <div>
@@ -118,7 +118,7 @@
 </main>
 <section class="py-10 sm:py-28 px-6 sm:px-20">
   <div class="flex flex-col gap-9">
-    <h2 class="font-semibold text-5xl">Frequently asked questions</h2>
+    <h2 class="font-semibold text-3xl md:text-5xl">Frequently asked questions</h2>
     <cdk-accordion class="accordion">
       @for (item of items; track item; let index = $index) {
       <cdk-accordion-item
@@ -217,10 +217,10 @@
   </svg>
 
   <div class="relative flex flex-col items-center justify-center gap-8 text-center">
-    <div class="text-6xl text-white font-semibold">Have Project in Mind ?</div>
-    <div class="text-7xl font-semibold text-amber-500">Let’s Talk.</div>
+    <label class="text-center text-white text-3xl md:text-6xl font-semibold leading-10">Have Project in Mind ?</label>
+    <label class="text-center text-amber-500 text-2xl md:text-6xl font-semibold leading-10">Let’s Talk</label>
     <div class="flex flex-col items-center gap-1 pt-6">
-      <label class="text-2xl text-[#ADB3BB] ">Our team will contact you with 3 business days.</label>
+      <label class="text-2xl text-[#ADB3BB] ">Our team will contact you with 3 business days</label>
       <a routerLink="/contact-us" class="px-12 py-5 bg-amber-500 rounded-full font-medium mt-6 w-fit">CONTACT US</a>
     </div>
   </div>
